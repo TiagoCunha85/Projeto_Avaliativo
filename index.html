@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Casdatral</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="SessaoPrincipal">
+        <section class="cabecalho">
+            <img src="Clinica_Med.jpg" width="100" height="100">
+            <h1>Cadastro Médico</h1>
+            <button onclick="openTela()" id="Novo_Med" >Novo Cadastro</button>
+        </section>
+
+        <section class="Tela-SessaoTabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Especialidade</th>
+                        <th>CRM</th>
+                        <th>CPF</th>
+                        <th>Endereco</th>
+                        <th>Email</th>
+                        <th>Telefone</th>
+                        <th>Salario</th>
+                        <th>Horario</th>
+                        <th>Plantao</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                    </tr> 
+                <thead> 
+                <tbody>      
+ 
+                </tbody>   
+            </table>
+    
+        </section>
+
+        <section class="SessaoPrincipal">
+            <section class="Tela-Salvar">
+                <form>
+                    <label for="nome">Nome</label>
+                    <input id="nome" type="text" required/>
+
+                    <label for="especialidade">Especialidade</label>
+                    <input id="especialidade" type="text" required/>
+
+                    <label for="crm">CRM</label>
+                    <input id="crm" type="number" required/>
+
+                    <label for="cpf">CPF</label>
+                    <input id="cpf" type="number" required/>
+
+                    <label for="endereco">Endereco</label>
+                    <input id="endereco" type="text" required/>
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" required/>
+
+                    <label for="telefone"> Telefone</label>
+                    <input id="telefone" type="tel" required/>
+
+                    <label for="salario">Salario</label>
+                    <input id="salario" type="number" required/>
+
+                    <label for="horario">Horario</label>
+                    <input id="horario" type="datetime" required/>
+
+                    <label for="plantao">Plantao</label>
+                    <input id="plantao" type="text" required/>
+
+                    <button id="btnSalvar">Salvar</button>
+
+                </form>
+            </section>
+
+        </section>    
+
+        <script src="script.js"></script>
+    </section>
+
+</body>
+</html>

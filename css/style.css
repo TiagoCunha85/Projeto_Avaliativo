@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(87, 151, 163, 0.78);
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .SessaoPrincipal {
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    background: rgb(167, 207, 207);
+  }
+  
+  .cabecalho {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 12px;
+  }
+  
+  #Novo_Med {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(26, 31, 30);
+    background-color: rgba(71, 126, 135, 0.781);
+  }
+  
+  .SessaoTabela {
+    width: 100%;
+    border-collapse: collapse;
+  }
+ 
+  tr {
+    border-bottom: 1px solid rgb(238, 235, 235);
+  }
+  
+  tbody tr td {
+    vertical-align: text-top;
+    padding: 6px;
+    max-width: 50px;
+  }
+
+  thead tr th {
+    text-align: center;
+    padding: 6px;
+    max-width: 150px;
+  }
+
+  thead tr th.acao {
+    width: 150px;
+    text-align: center;
+  }
+
+  tbody tr td.acao {
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 700px) {
+    body {
+      font-size: 10px;
+    }
+    
+    #Novo_Med {
+      padding: 5px;
+      font-size: 10px;
+    }
+  
+    thead tr th.acao {
+      width: auto;
+    }
+    
+    td button {
+      font-size: 20px;
+    }
+  
+    td button:first-child {
+      margin-right: 0;
+    }
+  
+  }
+
+  .SessaoTabela {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 62, 70, 0.5);
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Tela-Salvar label {
+    font-size: 14px;
+    width: 80%;
+    height: 60%;
+  }
+  
+  .Tela-Salvar input {
+    width: 100%;
+    outline: none;
+    padding: 2px 8px;
+    width: 100%; 
+    margin-bottom: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .Tela-Salvar button {
+    width: 100%;
+    margin: 10px auto;
+    outline: none;
+    border-radius: 20px; 
+    padding: 5px 10px; 
+    width: 20%;
+    border: none;
+    color: rgb(26, 31, 30);
+    background-color: rgba(71, 126, 135, 0.781);
+    
+  }
+  
+  .nocss {
+    display: flex;
+  }
